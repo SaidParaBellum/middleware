@@ -1,0 +1,9 @@
+<form action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Log in">
+</form>
+<form action="{% url 'sign' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Sign in">
+</form>
